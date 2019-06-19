@@ -1,0 +1,119 @@
+
+{% extends "layouts/default.twig" %}
+
+{% block body %}
+
+{#{% include 'includes/home-slider.twig' %}#}
+
+<!-- START: Who We Are -->
+<div class="container">
+    <div class="nk-gap-5"></div>
+    <div class="row">
+        <div class="col-lg-4">
+            {#<img class="nk-img-stretch" src="http://staging.jamiesmithestates.com/images/Jamie-Smith-Estates.png" alt="" >#}
+            <img class="nk-img-stretch" src="http://staging.jamiesmithestates.com/images/Jamie-Smith.jpg" alt="" >
+        </div>
+        <div class="col-lg-6 offset-lg-1">
+            <div class="ml-60">
+                <div class="nk-gap-2"></div>
+                <div class="nk-subtitle-3">Who We Are</div>
+                <h2 class="h2 text-uppercase">Property <br> Developers</h2>
+
+                <div class="nk-gap"></div>
+                <h3>
+                    Established 20 years ago, we are an experienced property development company that focus on building beautiful traditional homes with quality craftsmanship.
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="nk-gap-5"></div>
+
+</div>
+
+<!-- START: testimonials -->
+<div class="bg-dark">
+    <div class="container">
+        <div class="nk-gap-5"></div>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-1">
+                <div class="nk-subtitle-3 text-white">Testimonials</div>
+                <h2 class="h2 text-uppercase text-white">What our <br> Customers say</h2>
+
+                <div class="nk-gap"></div>
+
+                <blockquote class="text-white">"Thank you for creating such as beautiful home. Everywhere we look, It's finished in such detail, we love it."</blockquote>
+                <p>Anna and Billy, 2018</p>
+            </div>
+
+            <div class="col-md-5 offset-md-1">
+                <div class="nk-gap-3"></div>
+
+                <blockquote class="text-white">"Jamie takes real pride in his craftsmanship and that of his team, as a result the finish was to a high quality standard. He was attentive to our requirements during the build and post purchase has attended promptly to the normal minor snagging issues."</blockquote>
+                <p>Alan Trotter, 2017</p>
+            </div>
+        </div>
+
+        <div class="nk-gap-5"></div>
+    </div>
+</div>
+<!-- END: testimonials -->
+
+<!-- START: who we are -->
+<div class="container">
+    <div class="nk-gap-5"></div>
+
+    <div class="row">
+        <div class="col-lg-5">
+            <div class="ml-60">
+                <div class="nk-gap-2"></div>
+                <div class="nk-subtitle-3">Our Credentials</div>
+                <h2 class="h2 text-uppercase">Awards and <br>Nominations </h2>
+
+                <div class="nk-gap"></div>
+                <ul class="text-black h6 lh-25">
+                    <li class="pb-10">Highly commended in 2016 Premier Guarantee excellence awards.
+                    <li class="pb-10">Nominated for 2017 Premier Guarantee excellence awards.
+                    <li class="pb-10">Nominated for 2017 Local Authority Building Control excellence awards.
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4 order-lg-2 offset-lg-1">
+            {#<p>In the Press</p>#}
+            {#<ul class="text-black">#}
+                {#<li>Building Excellence (Oct 2016)</li>#}
+                {#<li>Georgian villa restored to traditional former glory (Nov 2013)</li>#}
+            {#</ul>#}
+            {#<div class="nk-gap-5"></div>#}
+            <img class="nk-img-stretch" src="http://staging.jamiesmithestates.com/images/pg-ea.png" alt="">
+        </div>
+    </div>
+    <div class="nk-gap-5"></div>
+</div>
+<!-- END: Who We Are -->
+
+
+<!-- START: Let's Work Together -->
+<div class="nk-box bg-dark-1 text-center">
+    <div class="nk-gap-5"></div>
+    {#<div class="bg-image bg-image-parallax">#}
+        {#<img src="assets/images/demo-minimal-architecture-contact-bg.jpg" alt="" class="jarallax-img">#}
+        {#<div class="bg-image-overlay" style="background-color: rgba(0, 0, 0, 0.6);"></div>#}
+    {#</div>#}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h2 class="text-uppercase text-white">Let`s work together</h2>
+                <div class="nk-gap-1 mnt-20"></div>
+                <p class="text-white">Let us know what you're looking for in a new property. We'll take a look and see if this could be the start of something beautiful.</p>
+                <div class="nk-gap mnt-9"></div>
+                <a href="{{ path_for('contact') }}" class="nk-btn nk-btn-outline nk-btn-color-gray nk-btn-hover-color-white text-white">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="nk-gap-5"></div>
+</div>
+<!-- END: Let's Work Together -->
+
+{% endblock %}

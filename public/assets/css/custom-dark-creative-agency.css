@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:500,500i,700,700i|Adamina");
+
+div.lead,
+.nk-heading-font,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-big,
+.display-extra-big,
+.nk-navbar.nk-navbar-left .nk-nav .dropdown > li:last-of-type > a,
+.nk-navbar.nk-navbar-left .nk-nav .dropdown > li > a,
+.nk-navbar.nk-navbar-left .nk-nav > li:last-of-type > a,
+.nk-navbar.nk-navbar-left .nk-nav > li > a,
+.nk-navbar-side .nk-nav .dropdown > li:last-of-type > a,
+.nk-navbar-side .nk-nav .dropdown > li > a,
+.nk-navbar-side .nk-nav > li:last-of-type > a,
+.nk-navbar-side .nk-nav > li > a,
+.nk-navbar-full .nk-nav .dropdown > li:last-of-type > a,
+.nk-navbar-full .nk-nav .dropdown > li > a,
+.nk-navbar-full .nk-nav > li:last-of-type > a,
+.nk-navbar-full .nk-nav > li > a,
+.nk-counter .nk-count,
+.nk-counter-2 .nk-count,
+.nk-counter-3 .nk-count,
+.nk-ibox-1-a .nk-ibox-title,
+.nk-ibox-1-a .nk-ibox-text,
+.nk-ibox-3-a .nk-ibox-title,
+.nk-ibox-6 .nk-ibox-title,
+.nk-pricing .nk-pricing-title,
+.nk-pricing .nk-pricing-price,
+.nk-carousel .nk-carousel-prev .nk-carousel-arrow-name,
+.nk-carousel .nk-carousel-next .nk-carousel-arrow-name,
+.nk-carousel-3 .nk-carousel-prev .nk-carousel-arrow-name,
+.nk-carousel-3 .nk-carousel-next .nk-carousel-arrow-name,
+.nk-team-block .nk-team-member .nk-team-member-name,
+.nk-fullpage-number,
+.nk-portfolio-launch-site,
+.nk-portfolio-list .nk-portfolio-item .nk-portfolio-item-letter,
+.nk-btn-3 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+}
+
+.nk-btn-3 {
+    text-transform: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-big,
+.display-extra-big {
+    font-weight: 500;
+}
+
+h1 em,
+.h1 em,
+h2 em,
+.h2 em,
+h3 em,
+.h3 em,
+h4 em,
+.h4 em,
+h5 em,
+.h5 em,
+h6 em,
+.h6 em,
+.display-1 em,
+.display-2 em,
+.display-3 em,
+.display-4 em,
+.display-big em,
+.display-extra-big em,
+blockquote,
+blockquote.nk-blockquote-style-1,
+.nk-post-text {
+    font-family: Adamina, serif;
+    font-style: normal;
+    text-transform: none;
+}
+
+.nk-post-text {
+    font-size: 1.1rem;
+}
+
+.nk-ibox-3-a .nk-ibox-icon {
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+.nk-ibox-3-a:hover .nk-ibox-icon {
+    color: #fbda03 !important;
+}

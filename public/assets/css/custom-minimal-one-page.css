@@ -1,0 +1,24 @@
+.nk-widget .nk-widget-title {
+    font-family: "Playfair Display", serif;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+
+/* Icon Box 1 restyle */
+.nk-ibox-1 .nk-ibox-icon {
+    margin-top: 8px;
+}
+.nk-ibox-1 .nk-ibox-cont {
+    margin-left: 75px;
+}
+.nk-ibox-1 .nk-ibox-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-family: "Playfair Display", serif;
+}
+.nk-ibox-1 .nk-ibox-text {
+    margin-top: 5px;
+    text-transform: none;
+}

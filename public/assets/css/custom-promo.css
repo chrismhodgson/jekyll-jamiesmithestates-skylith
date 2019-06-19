@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,500i,700,700i");
+
+div.lead,
+.nk-heading-font,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-big,
+.display-extra-big,
+.nk-navbar.nk-navbar-left .nk-nav .dropdown > li:last-of-type > a,
+.nk-navbar.nk-navbar-left .nk-nav .dropdown > li > a,
+.nk-navbar.nk-navbar-left .nk-nav > li:last-of-type > a,
+.nk-navbar.nk-navbar-left .nk-nav > li > a,
+.nk-navbar-side .nk-nav .dropdown > li:last-of-type > a,
+.nk-navbar-side .nk-nav .dropdown > li > a,
+.nk-navbar-side .nk-nav > li:last-of-type > a,
+.nk-navbar-side .nk-nav > li > a,
+.nk-navbar-full .nk-nav .dropdown > li:last-of-type > a,
+.nk-navbar-full .nk-nav .dropdown > li > a,
+.nk-navbar-full .nk-nav > li:last-of-type > a,
+.nk-navbar-full .nk-nav > li > a,
+.nk-counter .nk-count,
+.nk-counter-2 .nk-count,
+.nk-counter-3 .nk-count,
+.nk-ibox-1-a .nk-ibox-title,
+.nk-ibox-1-a .nk-ibox-text,
+.nk-ibox-3-a .nk-ibox-title,
+.nk-ibox-6 .nk-ibox-title,
+.nk-pricing .nk-pricing-title,
+.nk-pricing .nk-pricing-price,
+blockquote,
+.nk-carousel .nk-carousel-prev .nk-carousel-arrow-name,
+.nk-carousel .nk-carousel-next .nk-carousel-arrow-name,
+.nk-carousel-3 .nk-carousel-prev .nk-carousel-arrow-name,
+.nk-carousel-3 .nk-carousel-next .nk-carousel-arrow-name,
+.nk-team-block .nk-team-member .nk-team-member-name,
+.nk-fullpage-number,
+.nk-portfolio-launch-site,
+.nk-btn-3 {
+    font-family: Montserrat, sans-serif;
+}
+h1 em,
+.h1 em,
+h2 em,
+.h2 em,
+h3 em,
+.h3 em,
+h4 em,
+.h4 em,
+h5 em,
+.h5 em,
+h6 em,
+.h6 em,
+.display-1 em,
+.display-2 em,
+.display-3 em,
+.display-4 em,
+.display-big em,
+.display-extra-big em {
+    font-family: "Playfair Display", serif;
+}
+
+
+/* Navbar */
+.nk-navbar-top.nk-navbar-white-text-on-top .nk-nav > li > a,
+.nk-navbar-top.nk-navbar-dark .nk-nav > li > a {
+    color: #fff;
+}
+.nk-navbar-top.nk-navbar-white-text-on-top .nk-nav > li > a:hover,
+.nk-navbar-top.nk-navbar-dark .nk-nav > li > a:hover {
+    color: #ccc;
+}
+
+/* Header */
+.promo-header-demos {
+    position: absolute;
+    top: 33px;
+    right: 0;
+}
+@media screen and (max-width: 1199px) {
+    .promo-header-demos {
+        top: 150px;
+        max-width: 650px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .promo-header-demos {
+        display: none;
+    }
+}
+.promo-header-triangle {
+    position: absolute;
+    width: 100%;
+    min-width: 1000px;
+}
+
+/* Gradient */
+@supports (-webkit-background-clip: text) {
+    .promo-text-gradient {
+        background: linear-gradient(to left, #6623e9, #bd33a2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.promo-bg-gradient {
+    background: linear-gradient(to left, #bd33a2, #6623e9);
+}
+
+/* Additional bg */
+.promo-bg-purple {
+    background-color: #7c70e1;
+}
+.promo-bg-purple .nk-carousel-2.nk-carousel-arrows-bottom-center .nk-flickity-arrow {
+    color: #ddd;
+}
+
+/* Portfolio */
+.nk-portfolio-list .nk-portfolio-item-image-wrap {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .04), 0 4px 50px 0 rgba(0, 0, 0, .15);
+}
+.nk-portfolio-list .nk-portfolio-item {
+    overflow: visible;
+}
+.nk-portfolio-list .nk-portfolio-item.nk-portfolio-item-info-style-6:hover .nk-portfolio-item-image-wrap .nk-portfolio-item-image {
+    opacity: .9;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.promo-demos-soon {
+    position: relative;
+    width: 66.664% !important;
+    padding-top: 76px !important;
+    padding-bottom: 23.57% !important;
+    overflow: hidden;
+    font-family: Montserrat, sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: .9;
+    color: #dedcdc;
+    text-align: left;
+    text-transform: uppercase;
+}
+.promo-demos-soon > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.promo-demos-soon span {
+    display: block;
+    margin-left: 180px;
+}
+@media screen and (max-width: 991px) {
+    .promo-demos-soon {
+        display: none !important;
+    }
+}
+
+/* Carousels */
+.nk-carousel-2.nk-carousel-arrows-bottom-center .nk-carousel-inner {
+    padding-bottom: 160px;
+}
+.nk-carousel-2.nk-carousel-arrows-bottom-center .nk-flickity-arrow {
+    bottom: 70px;
+    font-size: 4rem;
+    color: #888;
+    background-color: transparent;
+}
+.nk-carousel-2.nk-carousel-arrows-bottom-center .nk-flickity-arrow.nk-flickity-arrow-prev {
+    margin-right: 20px;
+}
+.nk-carousel-2.nk-carousel-arrows-bottom-center .nk-flickity-arrow.nk-flickity-arrow-next {
+    margin-left: 20px;
+}

@@ -1,0 +1,13 @@
+.nk-portfolio-list .nk-portfolio-item.nk-portfolio-item-info-style-1.hover .nk-portfolio-item-info {
+    background-color: rgba(0, 0, 0, .5);
+}
+.nk-portfolio-list .nk-portfolio-item.nk-portfolio-item-info-style-1.hover:hover .nk-portfolio-item-info {
+    opacity: 0;
+}
+
+.nk-slider .nk-slider-content {
+    padding-bottom: 15px;
+}
+.nk-slider .nk-slider-container {
+    background-color: rgba(0, 0, 0, .2);
+}

@@ -1,0 +1,25 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<!--
+  START: Body Additional Classes: .nk-bg-gradient
+-->
+<body>
+  {% include header.html %}
+
+  <!--
+    START: Main Content Additional Classes: .nk-main-dark
+  -->
+  <div class="nk-main">
+    {% block body %}{% endblock %}
+  </div>
+  <!-- END: Main Content -->
+
+  {% include footer.html %}
+</body>
+</html>

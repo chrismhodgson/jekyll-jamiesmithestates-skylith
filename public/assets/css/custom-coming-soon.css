@@ -1,0 +1,6 @@
+/* Center logo */
+.nk-navbar .nk-nav-table > .nk-nav-logo {
+    padding-top: 10px;
+    flex: 1;
+    justify-content: center;
+}

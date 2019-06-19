@@ -1,0 +1,8 @@
+
+<!-- look for summary only if there is no content -->
+
+{% if page.content.size > 0 %}
+    <p>{{ page.content | remove: '<p>' | remove: '</p>' }}</p>
+{% elsif page.summary %}
+    <p>{{ page.summary | remove: '<p>' | remove: '</p>' }}</p>
+{% endif %}

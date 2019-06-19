@@ -1,0 +1,32 @@
+# Plugins
+plugins:
+- jekyll-paginate
+
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Chris Hodgson
+description:      'PHP &amp; React Developer'
+url:              http://jamiesmithestates.com
+baseurl:
+paginate:         20
+paginate_path: "/archive/page:num"
+
+# Custom vars
+# google_analytics: UA-12262661-1
+
+# see http://jch.penibelst.de
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+  endings: all
+  startings: [html, head, body]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [local]

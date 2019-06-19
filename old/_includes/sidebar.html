@@ -1,0 +1,27 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">{{ site.title }}</a>
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item {%if '/' == page.url %}active{% endif %}" href="/">Home</a>
+      {% for node in site.pages %}
+        {% unless node.show_in_sidebar != true %}
+          <!-- <span>·</span> -->
+          <a class="sidebar-nav-item {%if node.url == page.url %}active{% endif %}" href="{{ node.url }}">{{ node.title }}</a> 
+        {% endunless %}
+      {% endfor %}
+
+      <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a> -->
+      <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
+      <!-- <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
+    </nav>
+
+    <p class="sidebar-copyright">&copy; {{ site.time | date: '%Y' }} Chris Hodgson. &nbsp;
+      <a href="https://github.com/chrishodgson">Github</a></p>
+  </div>
+</div>

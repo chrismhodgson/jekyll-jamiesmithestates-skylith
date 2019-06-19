@@ -1,0 +1,56 @@
+{% extends "layouts/default.twig" %}
+
+{% block body %}
+
+    <div class="container">
+
+        <div class="nk-gap-4"></div>
+
+        <!-- START: Filter -->
+        {#<div class="nk-pagination nk-pagination-nobg nk-pagination-center">#}
+            {#<a href="#nk-toggle-filter"><span class="nk-icon-squares"></span></a>#}
+        {#</div>#}
+        {#<ul class="nk-isotope-filter">#}
+            {#<li class="active" data-filter="*">All</li>#}
+            {#<li data-filter="Interior">Interior</li>#}
+            {#<li data-filter="Building">Building</li>#}
+            {#<li data-filter="Branding">Branding</li>#}
+            {#<li data-filter="Design">Design</li>#}
+        {#</ul>#}
+        <!-- END: Filter -->
+
+        <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols nk-isotope-gap nk-popup-gallery">
+            
+                {% for item in items %}
+                    {% if loop.index < 10 %}
+                    <div class="nk-isotope-item" data-filter="Interior">
+                        <div class="nk-portfolio-item nk-portfolio-item-info-style-6">
+                            <a href="{{ path_for(item.name) }}" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image-wrap">
+                                <img class="nk-portfolio-item-image" src="/assets/jamie/portfolio/belverdere-listing.jpg" alt="">
+                            </div>
+                            <div class="nk-portfolio-item-info">
+                                <div>
+                                    <h2 class="nk-portfolio-item-title h5 mb0">{{ item.label }}</h2>
+                                    <div class="nk-portfolio-item-category mt-0">
+                                        {{ item.current_project ? 'Due for completion' : 'Completed' }} {{ item.completion_date }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {%  endif %}
+                {%  endfor %}
+
+        </div>
+
+        <div class="nk-gap-4"></div>
+    </div>
+
+    <!-- START: Pagination -->
+    {#<div class="nk-pagination nk-pagination-center">#}
+        {#<a href="#">Load More Works</a>#}
+    {#</div>#}
+    <!-- END: Pagination -->
+
+{% endblock body %}
