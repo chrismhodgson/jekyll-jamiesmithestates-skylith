@@ -11,9 +11,6 @@ permalink:        pretty
 
 # Setup
 title:            Chris Hodgson
-description:      'PHP &amp; React Developer'
-url:              http://jamiesmithestates.com
-baseurl:
 paginate:         20
 paginate_path: "/archive/page:num"
 

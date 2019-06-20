@@ -8,7 +8,7 @@ links:
 
 #### Configuring PHPStorm to use Xdebug
 
-- See [Configuring PHPStorm](/old/other/2018/06/15/xdebug-setup/) 
+- See [Configuring PHPStorm](/_old/other/2018/06/15/xdebug-setup/) 
 
 #### Xdebug Chrome Extension Setup 
 

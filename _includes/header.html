@@ -19,14 +19,10 @@
                 <div class="nk-nav-table">
 
                     <a href="{{ path_for('home') }}" class="nk-nav-logo">
-                        <img src="/custom/images/logo.png" alt="" width="100" class="nk-nav-logo-img-dark nk-nav-logo-img-light">
+                        <img src="/public/custom/images/logo.png" alt="" width="100" class="nk-nav-logo-img-dark nk-nav-logo-img-light">
                     </a>
 
-
-                    <ul class="nk-nav nk-nav-right d-none d-lg-block " data-nav-mobile="#nk-nav-mobile">
-
-                    </ul>
-
+                    <ul class="nk-nav nk-nav-right d-none d-lg-block " data-nav-mobile="#nk-nav-mobile"></ul>
 
                     <ul class="nk-nav nk-nav-right nk-nav-icons">
 
@@ -86,17 +82,20 @@
                                     <div class="nk-gap-3"></div>
                                     <ul class="nk-nav">
 
-                                        <li class="{{ current_route == path_for('home') ? 'active' : '' }}">
-                                            <a href="{{ path_for('home') }}"><span>Home</span></a>
+                                        {% if page.url == '/' %}active{% endif %}
+
+
+                                        <li class="{% if page.url == '/' %}active{% endif %}">
+                                            <a href="/"><span>Home</span></a>
                                         </li>
-                                        <li class="{{ current_route == path_for('portfolio') ? 'active' : '' }}">
-                                            <a href="{{ path_for('portfolio') }}"><span>Portfolio</span></a>
+                                        <li class="{% if page.url == '/portfolio/' %}active{% endif %}">
+                                            <a href="/portfolio/"><span>Portfolio</span></a>
                                         </li>
-                                        <li class="{{ current_route == path_for('about') ? 'active' : '' }}">
-                                            <a href="{{ path_for('about') }}"><span>About</span></a>
+                                        <li class="{% if page.url == '/about/' %}active{% endif %}">
+                                            <a href="/about/"><span>About</span></a>
                                         </li>
-                                        <li class="{{ current_route == path_for('contact') ? 'active' : '' }}">
-                                            <a href="{{ path_for('contact') }}"><span>Contact</span></a>
+                                        <li class="{% if page.url == '/contact/' %}active{% endif %}">
+                                            <a href="/contact/"><span>Contact</span></a>
                                         </li>
                                     </ul>
                                     <div class="nk-gap-3 d-none d-lg-block"></div>

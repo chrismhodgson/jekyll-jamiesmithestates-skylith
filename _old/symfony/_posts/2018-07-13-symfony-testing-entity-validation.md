@@ -392,7 +392,7 @@ class Address
 
 #### validation.yaml
 
-See [Validating Postcodes using a Symfony Constraint](/old/symfony/2017/10/16/symfony-postcode-validator-constraint/) for details of the PostCode Constraint
+See [Validating Postcodes using a Symfony Constraint](/_old/symfony/2017/10/16/symfony-postcode-validator-constraint/) for details of the PostCode Constraint
 
 ```yaml
 Cdt\Services\AddressBundle\Document\Address:
