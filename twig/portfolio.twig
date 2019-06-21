@@ -20,8 +20,8 @@
         <!-- END: Filter -->
 
         <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols nk-isotope-gap nk-popup-gallery">
-            
-                {% for item in items %}
+
+            {% for post in paginator.posts %}
                     {% if loop.index < 10 %}
                     <div class="nk-isotope-item" data-filter="Interior">
                         <div class="nk-portfolio-item nk-portfolio-item-info-style-6">
