@@ -18,14 +18,13 @@
             <div class="container">
                 <div class="nk-nav-table">
 
-                    <a href="{{ path_for('home') }}" class="nk-nav-logo">
+                    <a href="/" class="nk-nav-logo">
                         <img src="/public/custom/images/logo.png" alt="" width="100" class="nk-nav-logo-img-dark nk-nav-logo-img-light">
                     </a>
 
                     <ul class="nk-nav nk-nav-right d-none d-lg-block " data-nav-mobile="#nk-nav-mobile"></ul>
 
                     <ul class="nk-nav nk-nav-right nk-nav-icons">
-
                         <li class="single-icon">
                             <a href="#" class="nk-navbar-full-toggle">
                                 <span class="nk-icon-burger">
@@ -35,8 +34,6 @@
                                 </span>
                             </a>
                         </li>
-
-
                     </ul>
                 </div>
             </div>
@@ -81,15 +78,11 @@
                                 <div class="nano-content">
                                     <div class="nk-gap-3"></div>
                                     <ul class="nk-nav">
-
-                                        {% if page.url == '/' %}active{% endif %}
-
-
                                         <li class="{% if page.url == '/' %}active{% endif %}">
                                             <a href="/"><span>Home</span></a>
                                         </li>
-                                        <li class="{% if page.url == '/portfolio/' %}active{% endif %}">
-                                            <a href="/portfolio/"><span>Portfolio</span></a>
+                                        <li class="{% if page.url == '/projects/' %}active{% endif %}">
+                                            <a href="/projects/"><span>Projects</span></a>
                                         </li>
                                         <li class="{% if page.url == '/about/' %}active{% endif %}">
                                             <a href="/about/"><span>About</span></a>

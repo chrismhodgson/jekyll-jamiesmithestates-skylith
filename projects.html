@@ -1,0 +1,38 @@
+---
+layout: page
+title: Projects
+seo_title: "TODO"
+seo_description: "TODO"
+keyword: TODO
+date: 2018-07-02
+---
+
+<div class="container">
+
+    <div class="nk-gap-4"></div>
+
+    <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols nk-isotope-gap nk-popup-gallery">
+
+        {% for post in paginator.posts %}
+        <div class="nk-isotope-item" data-filter="Interior">
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-6">
+                <a href="{{ post.url }}" class="nk-portfolio-item-link"></a>
+                <div class="nk-portfolio-item-image-wrap">
+                    <img class="nk-portfolio-item-image" src="/public/custom/images/portfolio/belverdere-listing.jpg" alt="">
+                </div>
+                <div class="nk-portfolio-item-info">
+                    <div>
+                        <h2 class="nk-portfolio-item-title h5 mb0">{{ post.label }}</h2>
+                        <div class="nk-portfolio-item-category mt-0">
+                            {{ post.current_project ? 'Due for completion' : 'Completed' }} {{ post.date }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="nk-gap-4"></div>
+</div>
