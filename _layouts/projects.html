@@ -1,19 +1,17 @@
 ---
-layout: page
-title: Projects
-seo_title: "TODO"
-seo_description: "TODO"
-keyword: TODO
-date: 2018-07-02
+layout: default
 ---
 
 <div class="container">
+
+    {{ page.content }}
 
     <div class="nk-gap-4"></div>
 
     <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols nk-isotope-gap nk-popup-gallery">
 
-        {% for post in paginator.posts %}
+        {% for post in paginator.posts limit: 9 %}
+
         <div class="nk-isotope-item" data-filter="Interior">
             <div class="nk-portfolio-item nk-portfolio-item-info-style-6">
                 <a href="{{ post.url }}" class="nk-portfolio-item-link"></a>
@@ -24,7 +22,8 @@ date: 2018-07-02
                     <div>
                         <h2 class="nk-portfolio-item-title h5 mb0">{{ post.label }}</h2>
                         <div class="nk-portfolio-item-category mt-0">
-                            {{ post.current_project ? 'Due for completion' : 'Completed' }} {{ post.date }}
+                            {% if post.current %}Due for completion {% else %}Completed {% endif %}
+                            {{ post.date | date: "%Y" }}
                         </div>
                     </div>
                 </div>

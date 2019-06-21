@@ -1,0 +1,90 @@
+---
+layout: default
+---
+<!-- START: Header Title Additional Classes:
+        .nk-header-title-sm
+        .nk-header-title-md
+        .nk-header-title-lg
+        .nk-header-title-xl
+        .nk-header-title-full
+        .nk-header-title-parallax
+        .nk-header-title-parallax-content
+        .nk-header-content-center-center
+        .nk-header-content-center-left
+        .nk-header-content-center-right
+        .nk-header-content-top-center
+        .nk-header-content-top-left
+        .nk-header-content-top-right
+        .nk-header-content-bottom-center
+        .nk-header-content-bottom-left
+        .nk-header-content-bottom-right
+-->
+<div class="nk-header-title nk-header-title-parallax-content nk-header-content-center-center">
+
+    <div class="bg-image bg-image-parallax">
+        <img src="/assets/jamie/portfolio/belverdere-single.jpg" alt="" class="jarallax-img">
+    </div>
+
+    <div class="nk-header-content">
+        <div class="nk-header-content-inner"></div>
+    </div>
+
+</div>
+<!-- END: Header Title -->
+
+
+<div class="bg-white">
+    <div class="container">
+
+        <div class="nk-gap"></div>
+
+        <div class="nk-portfolio-single">
+
+            <div class="nk-gap-3"></div>
+
+            <div class="row vertical-gap">
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="nk-portfolio-info">
+                        <div class="nk-portfolio-text h2 lh-30">
+                            {{ page.title }}
+                        </div>
+
+                        <div class="nk-gap"></div>
+
+                        <div class="nk-portfolio-text h6 lh-25">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1">
+                    <div class="nk-portfolio-info">
+                        <div class="nk-portfolio-text text-black h7 lh-25">
+                            {{ page.address }}
+                        </div>
+
+                        <div class="nk-portfolio-text text-black h7 lh-25">
+                            {% if post.current %}Due for completion {% else %}Completed {% endif %}
+                            {{ post.date | date: "%Y" }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-gap-5"></div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- START: Pagination -->
+<div class="nk-pagination nk-pagination-center bg-gray-3">
+    <div class="container">
+        {% if page.previous.url %}
+            <a class="nk-pagination-prev" href="{{ page.previous.url }}"><span class="pe-7s-angle-left"></span> {{ page.previous.title }}</a>
+        {% endif %}
+        {% if page.next.url %}
+            <a class="nk-pagination-next" href="{{ page.next.url }}">{{ page.next.title }}<span class="pe-7s-angle-right"></span></a>
+        {% endif %}
+    </div>
+</div>
+<!-- END: Pagination -->
