@@ -2545,7 +2545,7 @@ function initFullPage() {
     }
     slideShow(curIndex, 'fade', 1);
     $bullets.on('click', '> li', function () {
-        var index = (0, _utility.$)(this).index();
+        var index = (0, _utility.$)(this).projects();
         if (index > curIndex) {
             slideShow(index, 'down');
         } else if (index < curIndex) {
@@ -2922,7 +2922,7 @@ function initShop() {
                 return;
             }
 
-            var index = (0, _utility.$)(this).index();
+            var index = (0, _utility.$)(this).projects();
             $carousel.flickity('select', index);
         });
 
@@ -3167,7 +3167,7 @@ function initSlider() {
             $container.append($rightNav);
 
             $rightNav.on('click', 'li:not(.active)', function () {
-                var idx = (0, _utility.$)(this).index();
+                var idx = (0, _utility.$)(this).projects();
                 var direction = 'right';
 
                 if (idx > curIndex) {
@@ -3196,7 +3196,7 @@ function initSlider() {
             $container.append($bullets);
 
             $bullets.on('click', 'li:not(.active)', function () {
-                var idx = (0, _utility.$)(this).index();
+                var idx = (0, _utility.$)(this).projects();
                 var direction = 'right';
 
                 if (idx > curIndex) {
@@ -3266,7 +3266,7 @@ function initSlider() {
                     return;
                 }
 
-                var idx = (0, _utility.$)(this).index();
+                var idx = (0, _utility.$)(this).projects();
                 var direction = 'right';
 
                 if (idx > curIndex) {
@@ -3647,7 +3647,7 @@ function initTeamBlock() {
         $this.find('.nk-team-member img.nk-team-member-photo').each(function () {
             var $img = (0, _utility.$)(this);
             var $parent = $img.parent();
-            var id = $parent.index();
+            var id = $parent.projects();
 
             $parent.attr('data-item-id', id);
             (0, _utility.$)('<div>').css({

@@ -22,7 +22,7 @@ layout: default
 <div class="nk-header-title nk-header-title-parallax-content nk-header-content-center-center">
 
     <div class="bg-image bg-image-parallax">
-        <img src="/assets/jamie/portfolio/belverdere-single.jpg" alt="" class="jarallax-img">
+        <img src="/public/custom/images/portfolio/belverdere-single.jpg" alt="" class="jarallax-img">
     </div>
 
     <div class="nk-header-content">
@@ -63,8 +63,9 @@ layout: default
                         </div>
 
                         <div class="nk-portfolio-text text-black h7 lh-25">
-                            {% if post.current %}Due for completion {% else %}Completed {% endif %}
-                            {{ post.date | date: "%Y" }}
+                            {% if page.completed %}Completed {{ page.date | date: "%Y" }}
+                            {% else %}Due for completion {{ page.date | date: "%B %Y" }}
+                            {% endif %}
                         </div>
                     </div>
                 </div>

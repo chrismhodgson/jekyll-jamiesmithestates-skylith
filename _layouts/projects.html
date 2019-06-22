@@ -10,25 +10,28 @@ layout: default
 
     <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols nk-isotope-gap nk-popup-gallery">
 
-        {% for post in paginator.posts limit: 9 %}
+        {% assign projects = site.projects | sort: 'date' | reverse %}
+        {% for project in projects limit:9 %}
 
         <div class="nk-isotope-item" data-filter="Interior">
             <div class="nk-portfolio-item nk-portfolio-item-info-style-6">
-                <a href="{{ post.url }}" class="nk-portfolio-item-link"></a>
+                <a href="{{ project.url }}" class="nk-portfolio-item-link"></a>
                 <div class="nk-portfolio-item-image-wrap">
                     <img class="nk-portfolio-item-image" src="/public/custom/images/portfolio/belverdere-listing.jpg" alt="">
                 </div>
                 <div class="nk-portfolio-item-info">
                     <div>
-                        <h2 class="nk-portfolio-item-title h5 mb0">{{ post.label }}</h2>
+                        <h2 class="nk-portfolio-item-title h5 mb0">{{ project.title }}</h2>
                         <div class="nk-portfolio-item-category mt-0">
-                            {% if post.current %}Due for completion {% else %}Completed {% endif %}
-                            {{ post.date | date: "%Y" }}
+                            {% if project.completed %}Completed {{ project.date | date: "%Y" }}
+                            {% else %}Due for completion {{ project.date | date: "%B %Y" }}
+                            {% endif %}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         {% endfor %}
 
     </div>
