@@ -17,6 +17,9 @@ title:            Chris Hodgson
 # Allow Future dated posts
 future: true
 
+# Show blog
+show_blog: false
+
 # Collections
 collections:
   projects:

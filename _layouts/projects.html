@@ -17,11 +17,12 @@ layout: default
             <div class="nk-portfolio-item nk-portfolio-item-info-style-6">
                 <a href="{{ project.url }}" class="nk-portfolio-item-link"></a>
                 <div class="nk-portfolio-item-image-wrap">
-                    <img class="nk-portfolio-item-image" src="/public/custom/images/portfolio/belverdere-listing.jpg" alt="">
+                    {% assign image = project.title | append: '-listing.jpg' | replace: ' ', '-' %}
+                    <img class="nk-portfolio-item-image" src="/public/custom/images/projects/{{ image }}" alt="">
                 </div>
                 <div class="nk-portfolio-item-info">
                     <div>
-                        <h2 class="nk-portfolio-item-title h5 mb0">{{ project.title }}</h2>
+                        <h2 class="nk-portfolio-item-title h6 mb0">{{ project.title }}</h2>
                         <div class="nk-portfolio-item-category mt-0">
                             {% if project.completed %}Completed {{ project.date | date: "%Y" }}
                             {% else %}Due for completion {{ project.date | date: "%B %Y" }}

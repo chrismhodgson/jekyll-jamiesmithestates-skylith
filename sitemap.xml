@@ -4,6 +4,16 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    {% for project in site.projects %}
+    <url>
+        <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+        <lastmod>{{ project.date | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    {% endfor %}
+
+    {% if site.show_blog %}
     {% for post in site.posts %}
         {% if post.date != null %}
         <url>
@@ -14,6 +24,7 @@ layout: null
         </url>
         {% endif %}
     {% endfor %}
+    {% endif %}
 
     {% for page in site.pages %}
         {% if page.date != null %}

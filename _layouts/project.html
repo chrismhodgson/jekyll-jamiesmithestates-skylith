@@ -22,7 +22,8 @@ layout: default
 <div class="nk-header-title nk-header-title-parallax-content nk-header-content-center-center">
 
     <div class="bg-image bg-image-parallax">
-        <img src="/public/custom/images/portfolio/belverdere-single.jpg" alt="" class="jarallax-img">
+        {% assign image = page.title | append: '-single.jpg' | replace: ' ', '-' %}
+        <img src="/public/custom/images/projects/{{ image }}" alt="" class="jarallax-img">
     </div>
 
     <div class="nk-header-content">
