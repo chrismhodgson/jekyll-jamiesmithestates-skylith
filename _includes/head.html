@@ -4,17 +4,17 @@
     <meta name="author" content="Chris Hodgson">
 
     <title>
-        {% if page.seo_title %}
+    {% if page.seo_title %}
         {{ page.seo_title | strip }}
-        {% else %}
+    {% else %}
         {{ page.title | strip }} - {{ site.title }}
-        {% endif %}
+    {% endif %}
     </title>
 
     {% if page.seo_description %}
     <meta content="{{ page.seo_description | strip | strip_html }}" name="description">
-    {% elsif page.summary %}
-    <meta content="{{ page.summary | strip | strip_html }}" name="description">
+    {% elsif page.seo_title %}
+    <meta content="{{ page.seo_title | strip | strip_html }}" name="description">
     {% else %}
     <meta content="{{ page.title | strip }}" name="description">
     {% endif %}
@@ -52,25 +52,11 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="/public/assets/css/custom-minimal-architecture.css">
-    <!--    <link rel="stylesheet" href="/custom/css/style.css">-->
+        <link rel="stylesheet" href="/custom/css/style.css">
     <!-- END: Styles -->
 
     <!-- jQuery -->
     <script src="/public/assets/vendor/jquery/dist/jquery.min.js"></script>
-
-    <style>
-        /*.nk-navbar a {*/
-        /*text-decoration: none;*/
-        /*font-size: 1.2rem;*/
-        /*}*/
-        .nk-post-category.nk-post-category-sold a {
-            background-color: #d50d16;
-        }
-        nav.nk-navbar {
-            padding: 7px 0;
-        }
-        ._gotcha{ display: none }
-    </style>
 
     {% if jekyll.environment == 'production' and site.google_analytics %}
     <script>

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Waterman Mews
+seo_title: Waterman Mews, Henley-on-Thames
 completed: false
 address: Reading Road, Henley-on-Thames.
 ---

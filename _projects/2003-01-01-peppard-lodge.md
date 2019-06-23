@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Peppard Lodge
+seo_title: Peppard Lodge, Henley-on-Thames
 completed: true
 address: Peppard Lane, Henley-on-Thames.
 ---

@@ -1,8 +1,9 @@
 ---
 layout: project
 title: Ferry Cottage
+seo_title: Ferry Cottage, Henley-on-Thames
 completed: true
-address: Lashbrook Road, Lower Shiplake.
+address: Lashbrook Road, Lower Shiplake, Henley-on-Thames.
 ---
 
 <p>Ferry Cottage is an outstanding detached property standing on the banks of the river Thames in Shiplake. The property was constructed to replace the original ferryman’s cottage, which unfortunately was destroyed by flooding in 2014.</p>

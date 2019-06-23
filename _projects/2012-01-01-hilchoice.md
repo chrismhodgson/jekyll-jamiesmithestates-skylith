@@ -1,8 +1,9 @@
 ---
 layout: project
 title: Hilchoice
+seo_title: Hilchoice, Henley-on-Thames
 completed: true
-address: Stoke Row Road, Peppard Common.
+address: Stoke Row Road, Peppard Common, Henley-on-Thames.
 ---
 
 <p>Hilchoice is a detached Victorian Villa, built in the early 1900’s, formally the village shop and post office, the property had been in the same family ownership since its construction.</p>

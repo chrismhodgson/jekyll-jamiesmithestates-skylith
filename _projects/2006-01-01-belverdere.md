@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Belverdere
+seo_title: Belverdere, Henley-on-Thames
 completed: true
 address: Rotherfield Road, Henley-on-Thames.
 ---

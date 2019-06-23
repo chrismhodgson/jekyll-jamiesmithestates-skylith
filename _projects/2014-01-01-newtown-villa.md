@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Newtown Villa
+seo_title: Newtown Villa, Henley-on-Thames
 completed: true
 address: Newtown Gardens, Henley-on-Thames.
 ---

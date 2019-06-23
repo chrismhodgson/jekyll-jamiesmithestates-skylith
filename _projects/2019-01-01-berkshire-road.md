@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Berkshire Road
+seo_title: Berkshire Road, Henley-on-Thames
 completed: true
 address: Berkshire Road, Henley-on-Thames.
 ---

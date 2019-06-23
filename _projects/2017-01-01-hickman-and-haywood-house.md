@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Hickman and Haywood House
+seo_title: Hickman and Haywood House, Henley-on-Thames
 completed: true
 address: St Andrews Road, Henley-on-Thames.
 ---
