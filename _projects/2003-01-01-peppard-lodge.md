@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Peppard Lodge
-seo_title: Peppard Lodge, Henley-on-Thames
+seo_title: Peppard Lodge, Henley, Jamie Smith Estates
 completed: true
 address: Peppard Lane, Henley-on-Thames.
 ---

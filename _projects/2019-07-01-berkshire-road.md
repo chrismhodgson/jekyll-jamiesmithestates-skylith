@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Berkshire Road
-seo_title: Berkshire Road, Henley-on-Thames
+seo_title: Berkshire Road, Henley, Jamie Smith Estates
 completed: false
 address: Berkshire Road, Henley-on-Thames.
 ---

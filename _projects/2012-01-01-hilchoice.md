@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Hilchoice
-seo_title: Hilchoice, Henley-on-Thames
+seo_title: Hilchoice, Henley, Jamie Smith Estates
 completed: true
 address: Stoke Row Road, Peppard Common, Henley-on-Thames.
 ---

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Newtown Villa
-seo_title: Newtown Villa, Henley-on-Thames
+seo_title: Newtown Villa, Henley, Jamie Smith Estates
 completed: true
 address: Newtown Gardens, Henley-on-Thames.
 ---

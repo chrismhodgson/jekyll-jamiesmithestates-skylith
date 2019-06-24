@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Ferry Cottage
-seo_title: Ferry Cottage, Henley-on-Thames
+seo_title: Ferry Cottage, Henley, Jamie Smith Estates
 completed: true
 address: Lashbrook Road, Lower Shiplake, Henley-on-Thames.
 ---

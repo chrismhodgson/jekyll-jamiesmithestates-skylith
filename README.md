@@ -1,4 +1,5 @@
-This is theme for my personal website based on the [Poole](http://getpoole.com), 
+
+This is theme for a website based on the [Poole](http://getpoole.com), 
 a theme for [Jekyll](http://jekyllrb.com), together with the Skylith HTML template.
 
 # Install

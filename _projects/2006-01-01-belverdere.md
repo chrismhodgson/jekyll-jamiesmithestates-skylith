@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Belverdere
-seo_title: Belverdere, Henley-on-Thames
+seo_title: Belverdere, Henley, Jamie Smith Estates
 completed: true
 address: Rotherfield Road, Henley-on-Thames.
 ---
