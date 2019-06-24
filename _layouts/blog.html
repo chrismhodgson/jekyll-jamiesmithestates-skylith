@@ -22,8 +22,7 @@ layout: default
 <div class="nk-header-title nk-header-title-parallax-content nk-header-content-center-center">
 
   <div class="bg-image bg-image-parallax">
-    <!--<img src="https://cdn-html.nkdev.info/skylith/assets/images/demo-minimal-architecture-header-blog.jpg" alt="" class="jarallax-img">-->
-    <img src="/public/custom/images/home/FarmRdFront.jpg" alt="" class="jarallax-img">
+    <img src="/public/custom/images/blog/ThePinesFront.jpg" alt="" class="jarallax-img">
     <div class="bg-image-overlay" style="background-color: rgba(0, 0, 0, 0.6);"></div>
   </div>
 
@@ -63,7 +62,7 @@ layout: default
           <div class="nk-blog-post">
             <div class="nk-post-thumb">
               <a href="{{ post.url }}">
-                <img src="/public/custom/images/home/FarmRdFront.jpg" alt="{{ post.title }}" class="nk-img-stretch">
+                <img src="/public/custom/images/blog/{{ post.image }}" alt="{{ post.title }}" class="nk-img-stretch">
               </a>
             </div>
             <h2 class="nk-post-title h3"><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -73,7 +72,8 @@ layout: default
             </div>
 
             <div class="nk-post-text">
-              {{ post.content }}
+              {{ post.excerpt }}
+              <a href="{{ post.url }}" class="nk-btn nk-btn-md nk-btn-outline nk-btn-color-gray-7 nk-btn-hover-color-dark-3 text-dark">Read More</a>
             </div>
           </div>
         </div>
