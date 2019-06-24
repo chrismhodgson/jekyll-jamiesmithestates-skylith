@@ -160,7 +160,10 @@ layout: default
                             <img class="nk-img-stretch" src="/public/custom/images/home/FarmRdFront.jpg" alt="Jamie Smith Estates, Property Developer, Henley-on-Thames" >
                         </a>
                     </div>
-                    <h2 class="nk-post-title h6 text-uppercase"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+                    <h2 class="nk-post-title h6 text-uppercase">
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </h2>
 
                     <div class="nk-post-date">
                         {{ post.date | date_to_string }}

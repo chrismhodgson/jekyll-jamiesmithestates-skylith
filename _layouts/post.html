@@ -129,6 +129,7 @@ layout: default
         <div class="nk-gap-5"></div>
 
         {% assign projects = site.projects | where: 'completed', 'false' | sort: 'date' | reverse %}
+
         {% unless projects.size == nil %}
         <div class="nk-widget">
           <h4 class="nk-widget-title">Current Projects</h4>
