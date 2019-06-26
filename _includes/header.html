@@ -84,9 +84,11 @@
                                         <li class="{% if page.url == '/projects/' %}active{% endif %}">
                                             <a href="/projects/"><span>Projects</span></a>
                                         </li>
+                                        {% if site.show_blog %}
                                         <li class="{% if page.url == '/blog/' %}active{% endif %}">
                                             <a href="/blog/"><span>Blog</span></a>
                                         </li>
+                                        {% endif %}
                                         <li class="{% if page.url == '/about/' %}active{% endif %}">
                                             <a href="/about/"><span>About</span></a>
                                         </li>

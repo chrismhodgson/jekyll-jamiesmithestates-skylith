@@ -22,7 +22,7 @@ url: staging.jamiesmithestates.com
 future: true
 
 # Show blog
-show_blog: true
+show_blog: false
 
 # Collections
 collections:
