@@ -7,62 +7,12 @@ date: 2018-07-02
 
 <div class="container">
     <div class="row vertical-gap">
-        <div class="col-lg-4">
-            <div class="nk-sidebar-sticky" data-offset-top="0">
-                <!-- START: Google Map -->
-                <div id="google-map-contact" class="nk-gmaps nk-gmaps-stretch nk-gmaps-full"></div>
-                <!-- dev key AIzaSyBlQNaWM2_jxXJbRwL2ozXWw3cg-uuld8w -->
-                <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCl7mCplpCkxv2t642BifJqCg-Qv8g4-44&sensor=false"></script>
-                <script>
-                    function initializeGmaps() {
-                        var LatLng = {lat: 51.509973, lng: -0.877633};
+        <div class="col-lg-7">
 
-                        var mapCanvas = document.getElementById('google-map-contact');
-                        var mapOptions = {
-                            center      : LatLng,
-                            scrollwheel : false,
-                            zoom        : 13,
-                            backgroundColor: 'none',
-                            mapTypeId   : 'nKStyle'
-                        };
-                        var map = new google.maps.Map(mapCanvas, mapOptions);
-                        var marker = new google.maps.Marker({
-                            position: LatLng,
-                            map: map,
-                            icon: '/public/assets/images/marker.png',
-                            title: 'Jamie Smith Estates'
-                        });
-
-                        // style from https://snazzymaps.com/style/151/ultra-light-with-labels
-                        var styledMapType = new google.maps.StyledMapType([{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}], { name: 'nKStyle' });
-                        map.mapTypes.set('nKStyle', styledMapType);
-                    }
-                    if(typeof google !== 'undefined') {
-                        google.maps.event.addDomListener(window, 'load', initializeGmaps);
-                    }
-                </script>
-                <!-- END: Google Map -->
-            </div>
-        </div>
-        <div class="col-lg-7 offset-lg-1">
             <div class="nk-gap-5 mnt-10"></div>
 
-            <!-- START: Contact Info -->
-            <h2>Contact Info:</h2>
-            <div class="nk-gap mnt-10"></div>
-
-            <p class="mw-400">Let us know what you're looking for in a new property. We'll take a look and see if this could be the start of something beautiful.</p>
-
-            <ul class="nk-contact-info">
-                <li><strong>Address:</strong> Ferry Cottage, Lashbrook Road, <br>Lower Shiplake, Henley-on-Thames, RG9 3NX.</li>
-                <li><strong>Phone:</strong> <a href="tel:07770 772922">07770 772922</a></li>
-                <li><strong>Email:</strong> <a href="mailto:info@jamiesmithestates.com">info@jamiesmithestates.com</a></li>
-            </ul>
-            <!-- END: Contact Info -->
-
-            <div class="nk-gap-4"></div>
             <!-- START: Get in Touch -->
-            <h2>Get in Touch:</h2>
+            <h2>Get in Touch</h2>
             <div class="nk-gap mnt-10"></div>
 
 
@@ -91,6 +41,25 @@ date: 2018-07-02
             <!-- END: Get in Touch -->
 
             <div class="nk-gap-5"></div>
+        </div>
+
+        <div class="col-lg-4 offset-lg-1">
+
+            <!-- START: Contact Info -->
+            <div class="nk-gap-3 mnt-10"></div>
+            <h3>Contact Details</h3>
+
+            <p class="mw-400">Let us know what you're looking for in a new property. We'll take a look and see if this could be the start of something beautiful.</p>
+
+            <ul class="nk-contact-info">
+                <li><strong>Address:</strong> Ferry Cottage, Lashbrook Road, <br>Lower Shiplake, Henley-on-Thames, RG9 3NX.</li>
+                <li><strong>Phone:</strong> <a class="text-dark" href="tel:07770 772922">07770 772922</a></li>
+                <li><strong>Email:</strong> <a class="text-dark" href="mailto:info@jamiesmithestates.com">info@jamiesmithestates.com</a></li>
+            </ul>
+            <!-- END: Contact Info -->
+
+            <div class="nk-gap-4"></div>
+
         </div>
     </div>
 </div>
