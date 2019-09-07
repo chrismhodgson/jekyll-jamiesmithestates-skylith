@@ -68,6 +68,14 @@ layout: default
                             {% else %}Due for completion {{ page.date | date: "%B %Y" }}
                             {% endif %}
                         </div>
+
+                        {% if page.sold_status %}
+                        <div class="nk-gap"></div>
+                        <h5>For Sale Status</h5> 
+                        <div class="nk-portfolio-text text-black h7 lh-25">
+                            {{ page.sold_status }}
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
