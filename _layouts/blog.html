@@ -32,7 +32,7 @@ layout: default
       <div class="container">
 
         <div class="nk-header-text text-white">
-          <h1 class="nk-title text-white">Jamie Smith Estates Blog</h1>
+          <h1 class="nk-title text-white">Jamie Smith Estates Project Updates</h1>
         </div>
 
       </div>
@@ -73,7 +73,9 @@ layout: default
 
             <div class="nk-post-text">
               {{ post.excerpt }}
-              <a href="{{ post.url }}" class="nk-btn nk-btn-md nk-btn-outline nk-btn-color-gray-7 nk-btn-hover-color-dark-3 text-dark">Read More</a>
+              <!--<a href="{{ post.url }}" class="nk-btn nk-btn-md nk-btn-outline nk-btn-color-gray-7 nk-btn-hover-color-dark-3 text-dark">Read More</a>-->
+              <a href="/projects/{{post.project}}/" class="nk-btn nk-btn-md nk-btn-outline nk-btn-color-dark-1 nk-btn-hover-color-dark-3 text-dark">View Project</a>
+
             </div>
           </div>
         </div>
@@ -126,7 +128,7 @@ layout: default
 
         {% assign projects = site.projects | where: 'completed', 'true' | sort: 'date' | reverse %}
         <div class="nk-widget">
-          <h4 class="nk-widget-title">Past Projects</h4>
+          <h4 class="nk-widget-title">Completed Projects</h4>
 
           <ul class="nk-categories-list">
             {% for project in projects limit:5 %}

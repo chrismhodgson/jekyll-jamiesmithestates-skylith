@@ -16,7 +16,10 @@ title:            Chris Hodgson
 future: true
 
 # Show blog
-show_blog: false
+show_blog:        true
+paginate:         20
+paginate_path:    "/updates/page:num"
+
 
 # Show Google analytics
 show_google_analytics: true
@@ -25,9 +28,7 @@ show_google_analytics: true
 collections:
   projects:
     output: true
-
-#paginate:         20
-#paginate_path:    "/blog/page:num"
+    permalink: /:collection/:title/
 
 # see http://jch.penibelst.de
 compress_html:

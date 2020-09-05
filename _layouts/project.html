@@ -37,11 +37,9 @@ layout: default
 <div class="bg-white">
     <div class="container">
 
-        <div class="nk-gap"></div>
-
         <div class="nk-portfolio-single">
 
-            <div class="nk-gap-3"></div>
+            <div class="nk-gap-4"></div>
 
             <div class="row vertical-gap">
                 <div class="col-lg-5 offset-lg-1">
@@ -60,28 +58,64 @@ layout: default
                 <div class="col-lg-4 offset-lg-1">
                     <div class="nk-portfolio-info">
                         <div class="nk-portfolio-text text-black h7 lh-25">
+                            <h5>Address</h5>
                             {{ page.address }}
                         </div>
 
-                        <div class="nk-portfolio-text text-black h7 lh-25">
-                            {% if page.completed %}Completed {{ page.date | date: "%Y" }}
-                            {% else %}Due for completion {{ page.date | date: "%B %Y" }}
-                            {% endif %}
-                        </div>
-
                         {% if page.sold_status %}
-                        <div class="nk-gap"></div>
-                        <h5>For Sale Status</h5> 
+                        <hr/>
                         <div class="nk-portfolio-text text-black h7 lh-25">
+                            <h5>For Sale Status</h5>
                             {{ page.sold_status }}
                         </div>
                         {% endif %}
+
+                        <hr/>
+                        <div class="nk-portfolio-text text-black h7 lh-25">
+                            <h5>Build Status</h5>
+                            {% if page.completed %}Completed {{ page.date | date: "%Y" }}
+                            {% else %}<span style="color: darkred">Due for completion {{ page.date | date: "%B %Y" }}</span>
+                            {% endif %}
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="nk-gap-5"></div>
 
         </div>
+
+
+        {% if page.images %}
+        <div class="nk-gap-2"></div>
+
+        <div class="nk-justified-gallery nk-portfolio-list">
+
+            {% assign image = page.title | append: '-1.jpg' | replace: ' ', '-' %}
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
+                <img class="nk-portfolio-item-image" src="/public/custom/images/projects/{{ image }}" alt="">
+            </div>
+
+            {% assign image = page.title | append: '-2.jpg' | replace: ' ', '-' %}
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
+                <img class="nk-portfolio-item-image" src="/public/custom/images/projects/{{ image }}" alt="">
+            </div>
+
+            {% assign image = page.title | append: '-3.jpg' | replace: ' ', '-' %}
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
+                <img class="nk-portfolio-item-image" src="/public/custom/images/projects/{{ image }}" alt="">
+            </div>
+
+            {% assign image = page.title | append: '-4.jpg' | replace: ' ', '-' %}
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
+                <img class="nk-portfolio-item-image" src="/public/custom/images/projects/{{ image }}" alt="">
+            </div>
+        </div>
+
+        <div class="nk-gap-2"></div>
+        {% else %}
+        <div class="nk-gap-3"></div>
+        {% endif %}
+
     </div>
 </div>
 

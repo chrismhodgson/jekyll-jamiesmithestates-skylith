@@ -24,9 +24,9 @@ layout: default
                     <div>
                         <h2 class="nk-portfolio-item-title h6 mb0">{{ project.title }}</h2>
                         <div class="nk-portfolio-item-category mt-0">
-                            {% if project.completed %}Completed {{ project.date | date: "%Y" }}
-                            {% else %}Due for completion {{ project.date | date: "%B %Y" }}
-                            {% endif %}
+                            <div style="height: 1em">{% if project.completed %}Completed {{ project.date | date: "%Y" }}
+                            {% else %}<span style="font-size: 1.25em; color: darkred">Due for completion {{ project.date | date: "%B %Y" }}</span>
+                            {% endif %}</div>
                         </div>
                     </div>
                 </div>

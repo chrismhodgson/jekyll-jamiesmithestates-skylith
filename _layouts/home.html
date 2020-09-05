@@ -106,46 +106,6 @@ layout: default
 </div>
 <!-- END: testimonials -->
 
-
-
-<!-- START: Works Categories -->
-<div class="container-fluid">
-    <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols">
-        <div class="nk-isotope-item">
-            <div class="nk-portfolio-item nk-portfolio-item-info-style-5 hover">
-                <img src="/public/custom/images/home/HilchoiceFireplace.jpg" alt="" class="nk-portfolio-item-image">
-                <div class="nk-portfolio-item-info nk-portfolio-item-info-bottom">
-                    <div>
-                        <h2 class="nk-portfolio-item-title text-uppercase h4">Traditional <br>Features</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="nk-isotope-item">
-            <div class="nk-portfolio-item nk-portfolio-item-info-style-5 hover">
-                <img src="/public/custom/images/home/HilchoiceDining.jpg" alt="" class="nk-portfolio-item-image">
-                <div class="nk-portfolio-item-info nk-portfolio-item-info-bottom">
-                    <div>
-                        <h2 class="nk-portfolio-item-title text-uppercase h4">Amazing <br>Spaces</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="nk-isotope-item">
-            <div class="nk-portfolio-item nk-portfolio-item-info-style-5 hover">
-                <img src="/public/custom/images/home/StAndrewsKitchen.jpg" alt="" class="nk-portfolio-item-image">
-                <div class="nk-portfolio-item-info nk-portfolio-item-info-bottom">
-                    <div>
-                        <h2 class="nk-portfolio-item-title text-uppercase h4">Beautiful <br>Interiors</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END: Works Categories -->
-
-
 {% if site.show_blog %}
 <!-- START: Blog -->
 <div class="bg-white">
@@ -153,8 +113,8 @@ layout: default
         <div class="nk-gap-5"></div>
 
         <div class="ml-60">
-            <div class="nk-subtitle-3">Blog</div>
-            <h2 class="h2 text-uppercase">Some of Our Latest <br> News</h2>
+            <div class="nk-subtitle-3">News</div>
+            <h2 class="h2 text-uppercase">Latest <br> Project Updates</h2>
         </div>
 
         <div class="nk-gap-2"></div>
@@ -167,17 +127,19 @@ layout: default
                 <div class="nk-blog-post">
                     <div class="nk-post-thumb">
                         <a href="{{ post.url }}">
-                            <img class="nk-img-stretch" src="/public/custom/images/blog/{{ post.image }}" alt="Property Developers, Henley-on-Thames, Jamie Smith Estates" >
+                            <img class="nk-img-stretch" src="/public/custom/images/blog/{{ post.image }}"
+                                 alt="Property Developers, Henley-on-Thames, Jamie Smith Estates" >
                         </a>
+                    </div>
+
+                    <div class="nk-post-date">
+                        {{ post.date | date_to_string }}
                     </div>
 
                     <h2 class="nk-post-title h6 text-uppercase">
                         <a href="{{ post.url }}">{{ post.title }}</a>
                     </h2>
-
-                    <div class="nk-post-date">
-                        {{ post.date | date_to_string }}
-                    </div>
+                    <!--<div class="nk-gap-1"></div>-->
 
                     <div class="nk-post-text">
                         {{ post.strapline }}
@@ -199,6 +161,51 @@ layout: default
 </div>
 <!-- END: Blog -->
 {% endif %}
+
+
+<!-- START: Works Categories -->
+<div class="container-fluid">
+    <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols">
+        <div class="nk-isotope-item">
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-5 hover">
+                <img src="/public/custom/images/home/HilchoiceFireplace.jpg" alt="" class="nk-portfolio-item-image">
+                <div class="nk-portfolio-item-info nk-portfolio-item-info-bottom">
+                    <div>
+                        <h3 class="nk-portfolio-item-title text-uppercase h4">Traditional Features</h3>
+                        <div class="nk-gap-1"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="nk-isotope-item">
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-5 hover">
+                <img src="/public/custom/images/home/HilchoiceDining.jpg" alt="" class="nk-portfolio-item-image">
+                <div class="nk-portfolio-item-info nk-portfolio-item-info-bottom">
+                    <div>
+                        <h3 class="nk-portfolio-item-title text-uppercase h4">Amazing Spaces</h3>
+                        <div class="nk-gap-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nk-isotope-item">
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-5 hover">
+                <img src="/public/custom/images/home/StAndrewsKitchen.jpg" alt="" class="nk-portfolio-item-image">
+                <div class="nk-portfolio-item-info nk-portfolio-item-info-bottom">
+                    <div>
+                        <h3 class="nk-portfolio-item-title text-uppercase h4">Beautiful Interiors</h3>
+                        <div class="nk-gap-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- END: Works Categories -->
+
+
 
 <!-- START: Let's Work Together -->
 <div class="nk-box bg-dark-1 text-center">
