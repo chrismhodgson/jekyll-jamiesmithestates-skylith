@@ -2,7 +2,7 @@
 layout: post
 title: Waterman Mews Completed
 seo_title: Waterman Mews Completed, Jamie Smith Estates
-project: Waterman-Mews
+project: waterman-mews
 image: Waterman-Mews-Blog.jpg 
 ---
 

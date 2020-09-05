@@ -2,7 +2,7 @@
 layout: post
 title: Berkshire Road Completed
 seo_title: Berkshire Road Completed, Jamie Smith Estates
-project: Berkshire-Road
+project: berkshire-road
 image: Berkshire-Road-Blog.jpg 
 ---
 
