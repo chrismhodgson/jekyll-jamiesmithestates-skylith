@@ -109,6 +109,31 @@ layout: default
             <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
                 <img class="nk-portfolio-item-image" src="/public/custom/images/projects/{{ image }}" alt="">
             </div>
+
+            {% if page.images >= 5 %}
+            {% assign image = page.title | append: '-5.jpg' | replace: ' ', '-' %}
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
+                <img class="nk-portfolio-item-image" src="/public/custom/images/projects/{{ image }}" alt="">
+            </div>
+
+
+            {% assign image = page.title | append: '-6.jpg' | replace: ' ', '-' %}
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
+                <img class="nk-portfolio-item-image" src="/public/custom/images/projects/{{ image }}" alt="">
+            </div>
+
+
+            {% assign image = page.title | append: '-7.jpg' | replace: ' ', '-' %}
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
+                <img class="nk-portfolio-item-image" src="/public/custom/images/projects/{{ image }}" alt="">
+            </div>
+
+
+            {% assign image = page.title | append: '-8.jpg' | replace: ' ', '-' %}
+            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
+                <img class="nk-portfolio-item-image" src="/public/custom/images/projects/{{ image }}" alt="">
+            </div>
+            {% endif %}
         </div>
 
         <div class="nk-gap-2"></div>

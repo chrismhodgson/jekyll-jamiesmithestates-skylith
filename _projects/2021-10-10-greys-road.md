@@ -2,8 +2,8 @@
 layout: project
 title: Greys Road
 seo_title: Greys Road, Henley, Jamie Smith Estates
-completed: false
-images: true
+completed: true
+images: 8
 address: Greys Road, Henley-on-Thames.
 ---
 

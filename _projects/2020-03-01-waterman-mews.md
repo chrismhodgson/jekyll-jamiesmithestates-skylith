@@ -3,7 +3,7 @@ layout: project
 title: Waterman Mews
 seo_title: Waterman Mews, Henley, Jamie Smith Estates
 completed: true
-images: true
+images: 4
 address: Reading Road, Henley-on-Thames.
 ---
 
