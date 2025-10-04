@@ -12,5 +12,5 @@ located in the picturesque village of Harpsden. Lucy's Farm Barns
 have been designed to reflect the history of the former farmyard, 
 whilst maximising the beautiful views over the adjoining farmland. </p>
 
-<p>Expected completion: spring 2026.</p>
+<p>Expected completion in March 2026.</p>
 
