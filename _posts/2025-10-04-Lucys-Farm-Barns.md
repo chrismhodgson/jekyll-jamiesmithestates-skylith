@@ -3,7 +3,7 @@ layout: post
 title: Lucy's Farm Barns Update
 seo_title: Lucy's Farm Barns, Jamie Smith Estates
 project: 
-image: Lucys-Farm-Barns.jpg 
+image: Lucys-Farm-Barns-Blog.jpg 
 ---
 
 <p>This is an exceptional development of 3 barn style dwellings, 
