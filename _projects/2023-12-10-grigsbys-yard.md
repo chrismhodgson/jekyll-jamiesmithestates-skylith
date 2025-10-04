@@ -3,7 +3,7 @@ layout: project
 title: Grigsbys Yard
 seo_title: Grigsbys Yard, Henley, Jamie Smith Estates
 completed: true
-images: 8
+images: 5
 address: Farm Road, Henley-on-Thames.
 ---
 

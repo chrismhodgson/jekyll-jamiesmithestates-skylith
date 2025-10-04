@@ -6,9 +6,5 @@ project:
 image: Lucys-Farm-Barns-Blog.jpg 
 ---
 
-<p>This is an exceptional development of 3 barn style dwellings, 
-located in the picturesque village of Harpsden. Lucy's Farm Barns 
-have been designed to reflect the history of trhe former farmyard, 
-whilst maximising the beatuiful views over the adjoining farmland. 
-Completion Spring 2026.</p>
+<p>The development of Lucy's Farm Barns in Harpsden is expected to be completed in spring 2026.</p>
 
