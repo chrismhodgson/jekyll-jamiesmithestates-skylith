@@ -1,11 +1,4 @@
-portfolio images 
----------------
-              width   height
-listing     = 510px x 650px 
-single      = 1440px x 470px / 1280 × 470
-
-on page     = 540px x 365px
-
-
-1280 × 854
-1280 x 960
+portfolio listing     = 510px x 650px 
+portfolio single      = 1440px x 470px (banner)
+portfolio other       = 540px x 365px
+news page             = 735px x 475px
