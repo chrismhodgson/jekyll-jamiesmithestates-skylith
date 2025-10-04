@@ -74,7 +74,9 @@ layout: default
             <div class="nk-post-text">
               {{ post.excerpt }}
               <!--<a href="{{ post.url }}" class="nk-btn nk-btn-md nk-btn-outline nk-btn-color-gray-7 nk-btn-hover-color-dark-3 text-dark">Read More</a>-->
+              {% if post.project %}
               <a href="/projects/{{post.project}}/" class="nk-btn nk-btn-md nk-btn-outline nk-btn-color-dark-1 nk-btn-hover-color-dark-3 text-dark">View Project</a>
+              {% endif %}
 
             </div>
           </div>
